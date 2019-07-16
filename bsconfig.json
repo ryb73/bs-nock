@@ -1,5 +1,5 @@
 {
-    "name": "bs-nock",
+    "name": "@ryb73/bs-nock",
     "bs-dev-dependencies": [
         "@glennsl/bs-jest",
         "@ryb73/bs-superagent",
