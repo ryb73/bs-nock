@@ -1,0 +1,17 @@
+{
+    "name": "bs-nock",
+    "bs-dev-dependencies": [
+        "@glennsl/bs-jest",
+        "@ryb73/bs-superagent",
+        "@ryb73/prom-ex",
+    ],
+    "sources": [
+        { "dir": "src" },
+        {
+            "dir": "__tests__",
+            "type": "dev"
+        }
+    ],
+    "refmt": 3,
+    "bsc-flags": [ "-w -10", "-bs-super-errors" ]
+}

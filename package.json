@@ -1,0 +1,41 @@
+{
+  "name": "bs-nock",
+  "version": "0.0.1",
+  "description": "Bucklescript bindings for https://github.com/nock/nock",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryb73/bs-nock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryb73/bs-nock/issues"
+  },
+  "homepage": "https://github.com/ryb73/bs-nock#readme",
+  "keywords": [
+    "reasonml",
+    "reason",
+    "bucklescript",
+    "nock",
+    "testing"
+  ],
+  "author": "Ryan",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "npm run clean && bsb -make-world",
+    "watch": "npm run clean && bsb -make-world -w",
+    "clean": "rm -rf lib && bsb -clean-world",
+    "postinstall": "[ ! -f package-links.json ] || ppl link-file"
+  },
+  "peerDependencies": {
+    "bs-platform": "^4.0.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.8",
+    "@ryb73/bs-superagent": "^0.2.2",
+    "@ryb73/prom-ex": "^0.2.0"
+  },
+  "dependencies": {
+    "nock": "11.0.0-beta.16"
+  }
+}
