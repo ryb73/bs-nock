@@ -1,5 +1,8 @@
 {
   "name": "@ryb73/bs-nock",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.3",
   "description": "Bucklescript bindings for https://github.com/nock/nock",
   "main": "index.js",
