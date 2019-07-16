@@ -11,7 +11,7 @@ deploy:
   skip_cleanup: true
   provider: npm
   email: rpbiwer@gmail.com
-  # on:
-  #   tags: true
+  on:
+    tags: true
   api_key:
     secure: NsbUi7k3SutqwuPnD5atHz066Ixcw4f7mIClqWG9Rt7DhDsRacAPKGeOgwXwG5kauQgvvXoCTfl9/fJpdAGiaco1ooKhbQN651pjtwb3ZHo4riUxHROToYyFI5rYuhuHsQKwcKKbQxV43BdW69n03jzSh99zbvllvQ/EzNpy0h/GI+aagUaM//WfCZurM31T8I/oJ/lPb6LHMjesYPorkg5in0NpZtfBSxuZvm2+X5fmhH298latuFLCUDRKubVcCHmHId7iI63ZsmnEmha79PIYzTdq1of6y361ZLC7xMCQK58+TFgNYfqNfO/t/r9fTOgKpRfoVAtpqe5zP1QBkNaBvxD/qtALhLB7xBQ0I4TNfcSrjrn+uwj7qzY7kUdQ5kpDaKq1OEwvXDS9FdoqrIHpmGZtgd4j+IWhafBPyieV1OMxpG2Hg7vnh+UVxzDhoZktCKk/VNpoOAXOl8CrvXRlUMjXs92JCSvQp1iF0jIRJPrwMj20Q+leanESjE+e/YyznZ78O2muJdetk/J/Tq8RhKUMtpvAfyvkgUBMhUovYBXWO8ibh3pNj7bxb44w+Jt2Cv9zTkzoLGDibJPxv7Rog2lJdYCMNTUxUOwD7S3Ys2E5DA8V7vSaldBjXK2o5c8uOqbIN0hwH0Vgpw7JkZzHp4U89LcLjzNxPSY/+FI=
