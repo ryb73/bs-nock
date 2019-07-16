@@ -1,6 +1,6 @@
 {
   "name": "bs-nock",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bucklescript bindings for https://github.com/nock/nock",
   "main": "index.js",
   "repository": {
