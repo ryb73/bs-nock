@@ -1,5 +1,5 @@
 {
-  "name": "bs-nock",
+  "name": "@ryb73/bs-nock",
   "version": "0.0.2",
   "description": "Bucklescript bindings for https://github.com/nock/nock",
   "main": "index.js",
