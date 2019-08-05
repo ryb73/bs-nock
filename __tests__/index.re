@@ -5,6 +5,40 @@ open PromEx;
 describe("Nock", () => {
     open Nock;
 
+    test("cleanAll", () => {
+        nock("http://lol.com")
+        |> get("/")
+        |> reply(200);
+
+        Nock.cleanAll();
+
+        expect(Nock.isDone())
+        |> toBe(true)
+    });
+
+    describe("isDone", () => {
+        testPromise("true", () => {
+            nock("http://lol.com")
+            |> get("/")
+            |> reply(200);
+
+            Superagent.get("http://lol.com/")
+            |> Superagent.end_
+            |> map(_ => Nock.isDone())
+            |> map(expect)
+            |> map(toBe(true))
+        });
+
+        test("false", () => {
+            nock("http://lol.com")
+            |> get("/")
+            |> reply(200);
+
+            expect(Nock.isDone())
+            |> toBe(false)
+        });
+    });
+
     testPromise("get", () => {
         nock("http://lol.com")
         |> get("/")
