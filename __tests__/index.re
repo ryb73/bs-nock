@@ -5,6 +5,8 @@ open PromEx;
 describe("Nock", () => {
     open Nock;
 
+    afterEach(() => Nock.cleanAll());
+
     test("cleanAll", () => {
         nock("http://lol.com")
         |> get("/")
@@ -37,6 +39,15 @@ describe("Nock", () => {
             expect(Nock.isDone())
             |> toBe(false)
         });
+    });
+
+    test("pendingMocks", () => {
+        nock("http://lol.com")
+        |> get("/")
+        |> reply(200);
+
+        expect(Nock.pendingMocks())
+        |> toEqual([|"GET http://lol.com:80/"|])
     });
 
     testPromise("get", () => {

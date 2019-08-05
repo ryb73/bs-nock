@@ -4,6 +4,7 @@ type scope;
 [@bs.module "nock"] external cleanAll: unit => unit = "";
 [@bs.module "nock"] external disableNetConnect: unit => unit = "";
 [@bs.module "nock"] external isDone: unit => bool = "";
+[@bs.module "nock"] external pendingMocks: unit => array(string) = "";
 
 [@bs.module] external nock: string => t = "";
 
