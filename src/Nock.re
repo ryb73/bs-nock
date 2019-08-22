@@ -9,6 +9,8 @@ type scope;
 [@bs.module] external nock: string => t = "";
 
 [@bs.send.pipe: t] external get: string => scope = "";
+[@bs.send.pipe: t] external getRegex: Js.Re.t => scope = "get";
+
 [@bs.send.pipe: t] external post: string => scope = "";
 
 [@bs.send.pipe: scope] external reply: (int, ~response: string=?, unit) => unit = "";

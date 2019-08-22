@@ -34,9 +34,10 @@
     "bs-platform": "^5.0.0"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
-    "@ryb73/bs-superagent": "^0.2.2",
-    "@ryb73/prom-ex": "^0.2.0"
+    "@glennsl/bs-jest": "^0.4.9",
+    "@ryb73/bs-superagent": "^0.2.3",
+    "@ryb73/prom-ex": "^0.3.1",
+    "bs-platform": "^5.0.6"
   },
   "dependencies": {
     "nock": "11.0.0-beta.16"

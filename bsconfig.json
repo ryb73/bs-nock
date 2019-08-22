@@ -13,5 +13,5 @@
         }
     ],
     "refmt": 3,
-    "bsc-flags": [ "-w -10", "-bs-super-errors" ]
+    "bsc-flags": [ "-w -105", "-bs-super-errors" ]
 }

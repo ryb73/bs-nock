@@ -64,6 +64,20 @@ describe("Nock", () => {
         )
     });
 
+    testPromise("getRegex", () => {
+        nock("http://lol.com")
+        |> getRegex(Js.Re.fromString("/.+"))
+        |> reply(200);
+
+        Superagent.(
+            Superagent.get("http://lol.com/asdfghjk")
+            |> end_
+            |> map(({ statusCode }) => statusCode)
+            |> map(expect)
+            |> map(toBe(200))
+        )
+    });
+
     testPromise("post", () => {
         nock("http://lol.com")
         |> post("/")
