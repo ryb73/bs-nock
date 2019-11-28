@@ -293,10 +293,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@ryb73/bs-superagent@^0.4.0-bs6.1":
-  version "0.4.0-bs6.1"
-  resolved "https://registry.yarnpkg.com/@ryb73/bs-superagent/-/bs-superagent-0.4.0-bs6.1.tgz#fb2d470c806a29755ba7ee46ffe3e775e7a24532"
-  integrity sha512-IXTqImbJuViJbb5pSN3KfZ9UBfAvzOVC91i21l58+Z+faB9SuPBZ9Tljgh2LbYHMKAUq92OjjakjxiXxEhqO5Q==
+"@ryb73/bs-superagent@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ryb73/bs-superagent/-/bs-superagent-0.4.0.tgz#21a046ac62fa1620272df3de3106011da75bfe1d"
+  integrity sha512-7A9/KCIyRGX2c7Bxy7dRS0qoyn4R7fFgeuP1IFnTA/Osi93vZOIdyAOiIZaxDJKIp5MZASL/5sRDoENoOFg23g==
   dependencies:
     "@ryb73/opt-ex" "^0.3.1"
     decco "^1.0.0"

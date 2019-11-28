@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.9",
-    "@ryb73/bs-superagent": "^0.4.0-bs6.1",
+    "@ryb73/bs-superagent": "^0.4.0",
     "@ryb73/prom-ex": "^1.0.1",
     "bs-platform": "^6.0.1"
   },
