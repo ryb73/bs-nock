@@ -27,19 +27,19 @@
     "test": "jest",
     "build": "npm run clean && bsb -make-world",
     "watch": "npm run clean && bsb -make-world -w",
-    "clean": "rm -rf lib && bsb -clean-world",
-    "postinstall": "[ ! -f package-links.json ] || ppl link-file"
+    "clean": "rm -rf lib && bsb -clean-world"
   },
   "peerDependencies": {
-    "bs-platform": "^6.0.0"
+    "bs-platform": "6 || 7 || 8"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.9",
-    "@ryb73/bs-superagent": "^0.4.0",
-    "@ryb73/prom-ex": "^1.0.1",
-    "bs-platform": "^6.0.1"
+    "@glennsl/bs-jest": "^0.6.0",
+    "@ryb73/bs-superagent": "^0.4.1",
+    "@ryb73/prom-ex": "^1.0.2",
+    "bs-platform": "8",
+    "jest": "^26.6.3"
   },
   "dependencies": {
-    "nock": "11.3.5"
+    "nock": "^13.0.5"
   }
 }
